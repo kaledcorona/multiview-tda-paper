@@ -1,0 +1,127 @@
+2025-04-26 12:46:14 - INFO - Logging initialized.
+ Writing to /home/jovyan/Workspace/workspace_mnist/logs/exp_noise_lines_30_trainsplit_vary_noise/experiment_logs_2025-04-26_12-46-14.log
+2025-04-26 12:46:14 - INFO - ========== [Experiment Start] ==========
+2025-04-26 12:46:14 - INFO - Views combinations successfully generated.
+2025-04-26 12:46:14 - INFO - Topological Data Analysis pipeline generated.
+2025-04-26 12:46:14 - INFO - Folder to save results has been created.
+2025-04-26 12:46:14 - INFO - Reading dataset from mnist_784.csv (chunk size: 70000).
+2025-04-26 12:46:15 - INFO - Starting multiview data preparation for a chunk of size (70000, 784)...
+2025-04-26 12:46:15 - INFO - Running using 20 jobs.
+2025-04-26 12:46:15 - INFO - Contaminating dataset with lines, quantity=47, transparency=1.0.
+2025-04-26 12:46:35 - INFO - Splitting data: 50.0% train / 20.0% test (random_state=910968928)
+2025-04-26 12:46:35 - INFO - Using full training data without second split.
+2025-04-26 12:46:35 - INFO - Data split complete. Train size: (56000, 784), Test size: (14000, 784)
+2025-04-26 12:46:35 - INFO - Reshaping train and test data into square images...
+2025-04-26 12:46:35 - INFO - Reshaping complete. Train images shape: (56000, 28, 28), Test images shape: (14000, 28, 28)
+2025-04-26 12:46:35 - INFO - Splitting images into quadrant views...
+2025-04-26 12:46:35 - INFO - Quadrant view splitting complete. Train views: 4, Test views: 4
+2025-04-26 12:46:35 - INFO - Saving sample images for each view...
+2025-04-26 12:46:35 - INFO - Sample views saved successfully.
+2025-04-26 12:46:35 - INFO - Starting TDA pipeline transformation on train data...
+2025-04-26 12:57:49 - INFO - TDA transformation for train completed (11.24 minutes).
+2025-04-26 12:57:49 - INFO - Applying TDA pipeline transformation on test data...
+2025-04-26 13:00:32 - INFO - TDA transformation for test completed (2.71 minutes).
+2025-04-26 13:00:32 - INFO - ========== [Model Training Start] ==========
+2025-04-26 13:00:32 - INFO - Training model: original
+2025-04-26 13:00:34 - INFO - Model original completed in 2.20 seconds.
+2025-04-26 13:00:34 - INFO - >>> Model original trained. Accuracy: 0.7937 (2.20 sec.)
+2025-04-26 13:00:34 - INFO - Training model: top_right-original
+2025-04-26 13:00:51 - INFO - Model top_right-original completed in 17.04 seconds.
+2025-04-26 13:00:51 - INFO - >>> Model top_right-original trained. Accuracy: 0.8199 (17.04 sec.)
+2025-04-26 13:00:51 - INFO - Training model: bottom_right-original
+2025-04-26 13:01:08 - INFO - Model bottom_right-original completed in 16.98 seconds.
+2025-04-26 13:01:08 - INFO - >>> Model bottom_right-original trained. Accuracy: 0.8121 (16.98 sec.)
+2025-04-26 13:01:08 - INFO - Training model: original-top_left
+2025-04-26 13:01:25 - INFO - Model original-top_left completed in 16.66 seconds.
+2025-04-26 13:01:25 - INFO - >>> Model original-top_left trained. Accuracy: 0.8168 (16.66 sec.)
+2025-04-26 13:01:25 - INFO - Training model: original-tda
+2025-04-26 13:01:58 - INFO - Model original-tda completed in 32.80 seconds.
+2025-04-26 13:01:58 - INFO - >>> Model original-tda trained. Accuracy: 0.7969 (32.80 sec.)
+2025-04-26 13:01:58 - INFO - Training model: original-bottom_left
+2025-04-26 13:02:15 - INFO - Model original-bottom_left completed in 16.97 seconds.
+2025-04-26 13:02:15 - INFO - >>> Model original-bottom_left trained. Accuracy: 0.8118 (16.97 sec.)
+2025-04-26 13:02:15 - INFO - Training model: top_right-original-bottom_right
+2025-04-26 13:02:38 - INFO - Model top_right-original-bottom_right completed in 23.05 seconds.
+2025-04-26 13:02:38 - INFO - >>> Model top_right-original-bottom_right trained. Accuracy: 0.8320 (23.05 sec.)
+2025-04-26 13:02:38 - INFO - Training model: top_right-original-top_left
+2025-04-26 13:03:00 - INFO - Model top_right-original-top_left completed in 22.40 seconds.
+2025-04-26 13:03:00 - INFO - >>> Model top_right-original-top_left trained. Accuracy: 0.8357 (22.40 sec.)
+2025-04-26 13:03:00 - INFO - Training model: top_right-original-tda
+2025-04-26 13:03:39 - INFO - Model top_right-original-tda completed in 38.52 seconds.
+2025-04-26 13:03:39 - INFO - >>> Model top_right-original-tda trained. Accuracy: 0.8142 (38.52 sec.)
+2025-04-26 13:03:39 - INFO - Training model: top_right-original-bottom_left
+2025-04-26 13:04:01 - INFO - Model top_right-original-bottom_left completed in 22.72 seconds.
+2025-04-26 13:04:01 - INFO - >>> Model top_right-original-bottom_left trained. Accuracy: 0.8301 (22.72 sec.)
+2025-04-26 13:04:01 - INFO - Training model: bottom_right-original-top_left
+2025-04-26 13:04:24 - INFO - Model bottom_right-original-top_left completed in 22.51 seconds.
+2025-04-26 13:04:24 - INFO - >>> Model bottom_right-original-top_left trained. Accuracy: 0.8313 (22.51 sec.)
+2025-04-26 13:04:24 - INFO - Training model: bottom_right-original-tda
+2025-04-26 13:05:02 - INFO - Model bottom_right-original-tda completed in 38.27 seconds.
+2025-04-26 13:05:02 - INFO - >>> Model bottom_right-original-tda trained. Accuracy: 0.8068 (38.27 sec.)
+2025-04-26 13:05:02 - INFO - Training model: bottom_right-original-bottom_left
+2025-04-26 13:05:25 - INFO - Model bottom_right-original-bottom_left completed in 22.78 seconds.
+2025-04-26 13:05:25 - INFO - >>> Model bottom_right-original-bottom_left trained. Accuracy: 0.8233 (22.78 sec.)
+2025-04-26 13:05:25 - INFO - Training model: original-top_left-tda
+2025-04-26 13:06:03 - INFO - Model original-top_left-tda completed in 37.71 seconds.
+2025-04-26 13:06:03 - INFO - >>> Model original-top_left-tda trained. Accuracy: 0.8141 (37.71 sec.)
+2025-04-26 13:06:03 - INFO - Training model: original-top_left-bottom_left
+2025-04-26 13:06:25 - INFO - Model original-top_left-bottom_left completed in 22.36 seconds.
+2025-04-26 13:06:25 - INFO - >>> Model original-top_left-bottom_left trained. Accuracy: 0.8299 (22.36 sec.)
+2025-04-26 13:06:25 - INFO - Training model: original-tda-bottom_left
+2025-04-26 13:07:04 - INFO - Model original-tda-bottom_left completed in 38.57 seconds.
+2025-04-26 13:07:04 - INFO - >>> Model original-tda-bottom_left trained. Accuracy: 0.8079 (38.57 sec.)
+2025-04-26 13:07:04 - INFO - Training model: top_right-original-bottom_right-top_left
+2025-04-26 13:07:33 - INFO - Model top_right-original-bottom_right-top_left completed in 29.06 seconds.
+2025-04-26 13:07:33 - INFO - >>> Model top_right-original-bottom_right-top_left trained. Accuracy: 0.8496 (29.06 sec.)
+2025-04-26 13:07:33 - INFO - Training model: top_right-original-bottom_right-tda
+2025-04-26 13:08:17 - INFO - Model top_right-original-bottom_right-tda completed in 44.28 seconds.
+2025-04-26 13:08:17 - INFO - >>> Model top_right-original-bottom_right-tda trained. Accuracy: 0.8249 (44.28 sec.)
+2025-04-26 13:08:17 - INFO - Training model: top_right-original-bottom_right-bottom_left
+2025-04-26 13:08:47 - INFO - Model top_right-original-bottom_right-bottom_left completed in 29.81 seconds.
+2025-04-26 13:08:47 - INFO - >>> Model top_right-original-bottom_right-bottom_left trained. Accuracy: 0.8421 (29.81 sec.)
+2025-04-26 13:08:47 - INFO - Training model: top_right-original-top_left-tda
+2025-04-26 13:09:31 - INFO - Model top_right-original-top_left-tda completed in 44.13 seconds.
+2025-04-26 13:09:31 - INFO - >>> Model top_right-original-top_left-tda trained. Accuracy: 0.8322 (44.13 sec.)
+2025-04-26 13:09:31 - INFO - Training model: top_right-original-top_left-bottom_left
+2025-04-26 13:10:01 - INFO - Model top_right-original-top_left-bottom_left completed in 29.54 seconds.
+2025-04-26 13:10:01 - INFO - >>> Model top_right-original-top_left-bottom_left trained. Accuracy: 0.8518 (29.54 sec.)
+2025-04-26 13:10:01 - INFO - Training model: top_right-original-tda-bottom_left
+2025-04-26 13:10:45 - INFO - Model top_right-original-tda-bottom_left completed in 44.09 seconds.
+2025-04-26 13:10:45 - INFO - >>> Model top_right-original-tda-bottom_left trained. Accuracy: 0.8262 (44.09 sec.)
+2025-04-26 13:10:45 - INFO - Training model: bottom_right-original-top_left-tda
+2025-04-26 13:11:29 - INFO - Model bottom_right-original-top_left-tda completed in 44.05 seconds.
+2025-04-26 13:11:29 - INFO - >>> Model bottom_right-original-top_left-tda trained. Accuracy: 0.8256 (44.05 sec.)
+2025-04-26 13:11:29 - INFO - Training model: bottom_right-original-top_left-bottom_left
+2025-04-26 13:11:58 - INFO - Model bottom_right-original-top_left-bottom_left completed in 29.03 seconds.
+2025-04-26 13:11:58 - INFO - >>> Model bottom_right-original-top_left-bottom_left trained. Accuracy: 0.8419 (29.03 sec.)
+2025-04-26 13:11:58 - INFO - Training model: bottom_right-original-tda-bottom_left
+2025-04-26 13:12:43 - INFO - Model bottom_right-original-tda-bottom_left completed in 44.90 seconds.
+2025-04-26 13:12:43 - INFO - >>> Model bottom_right-original-tda-bottom_left trained. Accuracy: 0.8180 (44.90 sec.)
+2025-04-26 13:12:43 - INFO - Training model: original-top_left-tda-bottom_left
+2025-04-26 13:13:27 - INFO - Model original-top_left-tda-bottom_left completed in 44.32 seconds.
+2025-04-26 13:13:27 - INFO - >>> Model original-top_left-tda-bottom_left trained. Accuracy: 0.8269 (44.32 sec.)
+2025-04-26 13:13:27 - INFO - Training model: top_right-original-bottom_right-top_left-tda
+2025-04-26 13:14:17 - INFO - Model top_right-original-bottom_right-top_left-tda completed in 50.18 seconds.
+2025-04-26 13:14:17 - INFO - >>> Model top_right-original-bottom_right-top_left-tda trained. Accuracy: 0.8445 (50.18 sec.)
+2025-04-26 13:14:17 - INFO - Training model: top_right-original-bottom_right-top_left-bottom_left
+2025-04-26 13:14:52 - INFO - Model top_right-original-bottom_right-top_left-bottom_left completed in 34.53 seconds.
+2025-04-26 13:14:52 - INFO - >>> Model top_right-original-bottom_right-top_left-bottom_left trained. Accuracy: 0.8626 (34.53 sec.)
+2025-04-26 13:14:52 - INFO - Training model: top_right-original-bottom_right-tda-bottom_left
+2025-04-26 13:15:42 - INFO - Model top_right-original-bottom_right-tda-bottom_left completed in 50.23 seconds.
+2025-04-26 13:15:42 - INFO - >>> Model top_right-original-bottom_right-tda-bottom_left trained. Accuracy: 0.8401 (50.23 sec.)
+2025-04-26 13:15:42 - INFO - Training model: top_right-original-top_left-tda-bottom_left
+2025-04-26 13:16:32 - INFO - Model top_right-original-top_left-tda-bottom_left completed in 49.77 seconds.
+2025-04-26 13:16:32 - INFO - >>> Model top_right-original-top_left-tda-bottom_left trained. Accuracy: 0.8491 (49.77 sec.)
+2025-04-26 13:16:32 - INFO - Training model: original-bottom_right-top_left-tda-bottom_left
+2025-04-26 13:17:21 - INFO - Model original-bottom_right-top_left-tda-bottom_left completed in 49.71 seconds.
+2025-04-26 13:17:21 - INFO - >>> Model original-bottom_right-top_left-tda-bottom_left trained. Accuracy: 0.8387 (49.71 sec.)
+2025-04-26 13:17:21 - INFO - Training model: top_right-original-bottom_right-top_left-tda-bottom_left
+2025-04-26 13:18:17 - INFO - Model top_right-original-bottom_right-top_left-tda-bottom_left completed in 56.12 seconds.
+2025-04-26 13:18:17 - INFO - >>> Model top_right-original-bottom_right-top_left-tda-bottom_left trained. Accuracy: 0.8610 (56.12 sec.)
+2025-04-26 13:18:17 - INFO - All models trained successfully.
+2025-04-26 13:18:17 - INFO - ========== [Model Training Completed] in 17.76 minutes ==========
+2025-04-26 13:18:17 - INFO - ========== [Experiment Training Complete] ==========
+2025-04-26 13:18:18 - INFO - Results saved to /home/jovyan/Workspace/workspace_mnist/results/exp_noise_lines_30_trainsplit_vary_noise/experiment_trainsize_predictions_2025-04-26_13-18-17.json
+2025-04-26 13:18:18 - INFO - Results successfully saved to /home/jovyan/Workspace/workspace_mnist/results/exp_noise_lines_30_trainsplit_vary_noise/experiment_trainsize_predictions_2025-04-26_13-18-17.json
+2025-04-26 13:18:18 - INFO - Forced Garbage collection executed to Free Memory.
+2025-04-26 13:18:18 - INFO - ========== [Experiment Completed] in 32.05 minutes ==========
